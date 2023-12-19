@@ -127,6 +127,16 @@ echo "100" | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
 echo "99" | sudo tee /sys/class/power_supply/BAT0/charge_control_start_threshold
 ```
 
+## 8. Better touchpad support for thinkpad t14 g2
+
+add to kernel parameters in `/etc/default/grub` `psmouse.synaptics_intertouch=1`
+then
+```sh
+sudo update-grub
+```
+
+
+
 ## P.S.
 
 more about electron option for wayland
