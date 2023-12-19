@@ -132,9 +132,11 @@ echo "99" | sudo tee /sys/class/power_supply/BAT0/charge_control_start_threshold
 more about electron option for wayland
 
 **--ozone-platform-hint=auto**
+
 Enabled wayland support
 
 **--enable-features=WaylandWindowDecorations**
+
 By default, electron apps draw their window decorations (or don't do so at all), so this option will enable support for native decorations
 
 **--disable-features=WaylandFractionalScaleV1**
