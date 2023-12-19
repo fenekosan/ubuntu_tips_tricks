@@ -1,6 +1,6 @@
 # Ubuntu 23.10 tips & tricks 
 
-## 1. disable snap
+## 1. Disable snap
 
 Get installed apps
 ```sh
@@ -126,3 +126,19 @@ reset limit
 echo "100" | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
 echo "99" | sudo tee /sys/class/power_supply/BAT0/charge_control_start_threshold
 ```
+
+## P.S.
+
+more about electron option for wayland
+
+**--ozone-platform-hint=auto**
+Enabled wayland support
+
+**--enable-features=WaylandWindowDecorations**
+By default, electron apps draw their window decorations (or don't do so at all), so this option will enable support for native decorations
+
+**--disable-features=WaylandFractionalScaleV1**
+
+When using fractional scaling, Electron applications may show graphical artifacts in window decorations, this option helps to fix it. This may appear as small lines of a few pixels with glitches or desktop wallpaper parts. 
+
+
